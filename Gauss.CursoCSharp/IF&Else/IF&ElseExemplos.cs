@@ -1,24 +1,4 @@
-﻿//Tela de Login
-var usuarios = new List<string> { "João", "Maria", "José", "Ana", "Nilton" };
-
-Console.WriteLine("Bem vindo! Para acessar nosso sistema, por favor, digite seu nome de usuário ");
-Console.Write("Login: ");
-string nomeUsuario = Console.ReadLine();
-
-if (nomeUsuario == "")
-{
-    Console.WriteLine("Usuário não informado, por favor, tente novamente.");
-}
-else if (usuarios.Contains(nomeUsuario))
-{
-    Console.WriteLine($"Usuário {nomeUsuario} logado com sucesso.");
-}
-else
-{
-    Console.WriteLine("Usuário não cadastrado, por favor, verifique o nome e tente novamente.");
-}
-
-// Criação de um sistema de login
+﻿// Criação de um sistema de login
 var usuarios = new List<string> { "João", "Maria", "José", "Ana", "Nilton" };
 
 Console.WriteLine("Bem vindo! Para acessar nosso sistema, por favor, digite seu nome de usuário ");
@@ -78,4 +58,25 @@ if (usuarioLogado)
             break;
     }
 
+}
+
+string mes = "Janeiro";
+
+switch (mes)
+{
+    case "Janeiro":
+    case "Março":
+    case "Maio":
+    case "Julho":
+    case "Agosto":
+    case "Outubro":
+    case "Dezembro":
+        Console.WriteLine("Este mês tem 31 dias");
+        break;
+    case "Fevereiro":
+        Console.WriteLine("Este mês tem 28 ou 29 dias");
+        break;
+    default:
+        Console.WriteLine("Este mês tem 30 dias");
+        break;
 }

@@ -16,3 +16,4 @@ foreach (var numero in numeros)
         Console.WriteLine($"Número neutro:{numero}");
     }
 }
+
