@@ -1,12 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿Console.WriteLine("Digite a nota do aluno");
+int nota = int.Parse(Console.ReadLine());
 
-namespace Gauss.CursoCSharp.IF_Else
+
+if (nota >= 90)
 {
-    internal class Exercicio2
-    {
-    }
+    Console.WriteLine("Excelente");
+}
+else if (nota >= 70)
+{
+    Console.WriteLine("Bom");
+}
+else if (nota >= 50)
+{
+    Console.WriteLine("Regular");
+}
+else
+{
+    Console.WriteLine("Insuficiente");
 }
