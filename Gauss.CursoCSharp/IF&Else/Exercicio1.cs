@@ -1,19 +1,25 @@
-﻿//Crie uma lista de números e verifique se são positivos, negativos ou neutros (zero).  
-var numeros = new List<int> { 5, -3, 0, 7, -2, 8, -1 };
+﻿//Crie um programa que avalie se o aluno passou no TCC. Para passar, ele precisa cumprir os requisitos abaixo:
 
-foreach (var numero in numeros)
+//Para passar ele precisa ter 100 horas complementares e nota 7.
+//Caso não possua as 100 horas ele não estará formado
+//Caso a nota seja menor que 7 ele está de exame.
+
+
+int horasComplementares = 70;
+int notaTCC = 5;
+
+if (horasComplementares >= 100)
 {
-    if (numero > 0)
+    if (notaTCC >= 7)
     {
-        Console.WriteLine($"Número positivo:{numero}");
-    }
-    else if (numero < 0)
-    {
-        Console.WriteLine($"Número negativo:{numero}");
+        Console.WriteLine("Parabéns, você está formado!");
     }
     else
     {
-        Console.WriteLine($"Número neutro:{numero}");
+        Console.WriteLine("Você está de exame");
     }
 }
-
+else
+{
+    Console.WriteLine("Você ainda não está formado.");
+}
