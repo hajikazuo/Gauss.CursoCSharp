@@ -1,6 +1,10 @@
-﻿Random random = new Random();
+﻿//Crie um programa onde o computador sorteie um número de 1 a 10.
 
-int numeroSecreto = random.Next(1, 10);
+//O programa deve exibir uma mensagem perguntando qual o número, para que o usuário digite.
+//Caso a resposta esteja errada, o programa deverá exibir a seguinte mensagem: Infelizmente você errou, tente novamente
+//Se a resposta estiver correta, o programa finaliza o loop
+
+int numeroSecreto = (new Random().Next(1, 10));
 int palpite;
 
 do
